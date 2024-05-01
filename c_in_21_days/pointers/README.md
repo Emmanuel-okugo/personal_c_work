@@ -1,1 +1,1 @@
-## this directory contains progeams focused on pointers 
+## this directory contains programs focused on pointers 
