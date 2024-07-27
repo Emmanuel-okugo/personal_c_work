@@ -10,27 +10,15 @@
 
 int _islower(char c)
 {
-
-	char i;
-
-	int count = 0;
-
-	for (i = 'a'; i < 'z'; i++)
+	
+	if (!(c < 'a' || c > 'z'))
 	{
-		if (c == i)
-		{
-			return (1);
-		}
-
-		count = count + 1;
+		return (1);
 	}
-
-
-	if (count == 25)
+	else
 	{
 		return (0);
 	}
 
-	return (2);
 
 }
