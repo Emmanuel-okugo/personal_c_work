@@ -1,0 +1,7 @@
+STRING COMPRESSION: String compression is a process of reducing the size of a
+string by encoding it in a more compact representation while preserving its essential
+information. This technique finds applications in various fields such as data storage,
+data transmission, and information retrieval, where minimizing the storage or
+transmission space is crucial. String compression algorithms aim to achieve efficient
+encoding and decoding processes while ensuring that the original data can be
+reconstructed accurately.
