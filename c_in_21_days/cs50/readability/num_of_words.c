@@ -1,4 +1,5 @@
 #include <string.h>
+#include <stdio.h>
 /**
  * num_of_words: entrypoint to this function
  * description: calculates the number of words in a text

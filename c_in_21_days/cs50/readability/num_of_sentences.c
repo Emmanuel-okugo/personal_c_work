@@ -23,7 +23,7 @@ int num_of_sentences(char * str_ing)
                 /* getting the number of sentences */
                 if(str_ing[i] == '.' || str_ing[i] == '!' || str_ing[i] == '?' || i == strlength - 1)
                 {
-                        if(!(str_ing[i] == '.' && str_ing[i + 1] != ' ' &&  i != strlength - 1))
+                        if(!(str_ing[i + 1] != ' ' &&  i != strlength - 1))
                         {
                                 num_of_sentences++;
                         }
