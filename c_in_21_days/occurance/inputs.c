@@ -15,7 +15,7 @@ int main(void)
 	int letters[26];
 	char *file;
 	int ch, j;
-	long i = 0;
+	int i = 0;
 
 	/* getting enough storage that may contain a whole file */
 	file = malloc(1000000000 * sizeof(char));

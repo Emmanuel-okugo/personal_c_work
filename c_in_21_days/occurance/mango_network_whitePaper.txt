@@ -1,0 +1,539 @@
+- 1 -
+Mango Network
+Transactional Omni-Chain Infrastructure Network
+v1.2
+Abstract
+In response to the multiple pain points of
+Web3 application and DeFi protocol, such as
+fragmented user experience and fragmented
+liquidity, Mango Network proposes a
+transaction-based omni-chain infrastructure
+network solution, aiming to build a one-stop
+liquidity service network through main-chain
+contracts and modular contracts, and to bring users
+a more secure and trustworthy, asset-diversified, and convenient and autonomous transaction
+experience. At the same time, Mango, as Layer1
+and supported by Move, provides developers and
+users with a secure, modular and high-performance
+Web3 infrastructure, and the Devnet boasts a high
+TPS of 297.45k, which is both standardized, scalable and interoperable, and provides a solid
+underlay for building non-custodial, decentralized, omni-chain mobility pledges, lending and
+borrowing, POS pledges, GameFi, and other core
+applications, so that participants can experience an
+unprecedented level of freedom in Web3. I Web3.0 Public Chain Leader - Move
+1.1 Move emergence background
+In 2019, Meta (formerly Facebook) introduced
+the global circulation of the sovereign digital
+currency project Libra. Throughout this process, Libra and the Diem team left behind a valuable
+legacy - the Move language that addresses the
+shortcomings of Solidity and EVM, as well as the
+derived public chain team. Move languageisaresource-oriented programming languagethat
+borrows syntax and semantics fromlanguagessuchas Rust, Cyclone, and Ada. The Move languageaims to provide a high-performance, secure, andreliable programming environment for blockchainapplications. It is a programming languagedesignedspecifically for digital assets. 1.2 Advantages of Move series publicchain
+Move has redefined digital assets, believingthat token assets are a unique and important formofdata that should not be defined and representedusing ordinary numerical types. Therefore, Movehas created Resource to define on-chainassetsseparately. Move language lowers the securitythresholdfor developers, allowing contract developerstofocus on business logic and write highlysecurecode, avoiding security vulnerabilities causedbylow-level bugs. This is what makes DeFi
+(Decentralized Finance) safer and gives peaceofmind to node users. 1.3 Characteristics of Move languageMove aims to provide a secure, efficient, andmodular development solution for distributedapplications. The core idea of the Movelanguageisto break down complex programmingtasksintomultiple modules, effectively reducingcomplexityand lowering the probability of errors inprogramming.
+- 2 -
+1.3.1 Programming assets as first-class
+resources (First-class Resources)
+The Move language abstracts four attributes
+of resources: copyable, indexable, droppable, and
+storable. With different combinations of these
+attributes, users can easily define any type of
+resource. The specified resources will be stored in a
+module controlled by the owner's account, represented by a verified owner/signer. The owner
+of these resources has the ultimate decision-making
+power and only the owner can determine the
+storage and transfer of the resources. The design of resources allows for the transfer
+of digital assets to be a movement between storage
+locations rather than a simple addition or
+subtraction of balance values between accounts, thus avoiding re-entry and double-spending attacks. 1.3.2 Ensure its security through static call, virtual machine sandbox, etc
+The Move language uses static calls, which
+improves runtime security, solves the problems of
+dynamic calls, and enhances network stability.
+Move VM is the virtual machine sandboxforthe Move programming language, wherecontractinvocations are placed within the samesandbox.During this process, the security of thecontract'sstate is primarily isolated through the internal
+security of the programming language, ratherthanrelying on the virtual machine for isolation. 1.3.3 Verifiability
+The Move programming languageadoptsformal verification. Formal verificationisameansof using digital tools to analyze and provethesecurity of a program. The previouslymentionedstatic calls and virtual machine sandboxcanenhance the security of verification. 1.3.4 Flexibility
+The flexibility of Move is reflectedintheability to freely combine various transactionsthrough transaction scripts to achieve differentfunctionalities, where one script caninvokemultiple transactions. By using genericprogramming, Move ensures the scalabilityofcontracts and increases code reusability.
+- 3 -
+1.3.5 Contract composability
+The composability of the Move language
+comes from the design of its Modules. Upgrading
+and optimizing Modules enables all other contracts
+that have used this Module to automatically use the
+latest version, accelerating the speed of upgrading
+and optimizing smart contracts using the Move
+language. 1.4 Status quo of Move series public
+chains
+The Move language truly achieves the
+digitization of assets and is hailed as one of the
+most suitable languages for writing blockchain
+smart contracts. It has been compared to the current
+mainstream language Solidity multiple times and
+has surpassed it in many aspects. The main reason
+is that Move provides a more fitting handling of the
+core token assets in blockchain, compensating for
+Solidity's shortcomings in intuitiveness and
+security.
+Currently, the public chain based on the Move
+language is in the stage of ecological expansion, attracting more developers and users to join. Once
+an ecosystem is formed, users can bring sustainable
+income. The more prosperous the ecosystem, the
+stronger the innovation ability, and the more
+marginal benefits there will be. This is also the
+reason why public chains can become the core
+carrier of Web3. II Technical Differences of SolidityVSMove
+Transitioning fromBitcoin's Script toEthereum's Solidity, undergoing the baptismofDeFi, Solidity has undoubtedly beensuccessful.However, the security vulnerabilities of DeFi arealso worth paying attention to. Howtoensurethesecurity of on-chain assets has becomeamajorissue that the entire industry urgentlyneedstoface.Behind these vulnerabilities, VMis alsoconstantly patching up, such as fixingtheoriginaloverflow issues, but it is difficult to makesubstantial improvements in the underlyingdesignflaws. Unlike previous development experiences,DeFi applications are essentially open-sourceandtransparent financial systems that haveextremelyhigh security requirements. So, for financial
+scenarios, designing a more secure, reliable, anduser-friendly smart contract language maybeabetter choice. Characteristic Solidity MoveTuring
+completeness
+Yes YesSafety Poor VerygoodDeveloper
+friendly
+Yes YesDispersed
+storage
+No YesEngineering
+ability
+Poor GoodFlexibility Dynamic
+mobilization
+GenericprogrammingFinancial scene
+enhancement
+No YesSolidity still has three major technical
+- 4 -
+challenges that need to be overcome urgently. Solidity's syntax and expression methods are
+complex. Traditional object-oriented programming
+languages like Java have become the best choice for
+novice developers to create Ethereum contracts. However, due to the complexity of Solidity, developers are unable to effectively understand its
+syntax. There are code security vulnerabilities in
+Solidity. This is also a major weakness of its
+competitiveness. There are many security
+vulnerabilities in Solidity due to improper usage, so
+developers need to be well-prepared for security
+testing before writing contracts in Solidity. Solidity still has challenges in terms of
+performance. The performance of Solidity compared to
+relatively simple programming languages like
+Python still needs improvement. With the growth of
+Ethereum, there is also a continuous increase in
+Ethereum-based applications. The performance
+issues of Solidity will affect the overall operational
+efficiency of Ethereum, thereby increasing network
+load and reducing the overall security of the
+Ethereum network. From the above perspective, Solidity, as the
+most popular smart contract development language
+on Ethereum, is powerful enough but not perfect. Move language emerged in this context. III Mango Programming Model
+3.1 Resource-oriented programming
+Mango Move has been specifically enhanced
+for financial, social, and gaming scenarios, introducing resource-oriented programming. For
+common scenarios such as FT and NFT, Mango
+Move defines data as resources, ensuring data
+security at the virtual machine level.
+3.2 Pure static language
+Dynamic dispatch is the cornerstoneofSolidity, and all cross-contract invocationsareimplemented through dynamic dispatch. It isalsothe entry point for most security vulnerabilities, such as TheDAO attack, PolyNetworkcross-chainattack, and so on. Given the real experienceofSolidity, Mango Move adopts a completelypurestatic implementation to better ensure thesecurityof on-chain assets. 3.3 Formal verification
+Formal verification, also knownas FV(formalverification), refers to the use of mathematical toolsto analyze the space of possible behaviorsofadesign, rather than computing specific valuesasresults. Mango Move comes with a formal
+verification tool that can be used to test andprovethe reliability of contracts using mathematical
+methods. 3.4 Distributed Storage
+In the era of Web3.0, users have ownershipofdata. Solidity stores contract data in a centralizedmanner through Maps. When a contract hasavulnerability and the contract Owner's permissionsare obtained, all user data will be compromised.Mango Move cleverly uses Resource tostoredatascattered under each user's Account, ensuringbothdata security and true ownership of databyall
+network nodes. 3.5 Generic programmingFor security reasons, Mango Movehasbeendesigned as a purely static language, but thishasnot reduced its flexibility. Through genericprogramming, Mango Move ensures thescalabilityof contracts and increases code reusability.
+- 5 -
+Blockchain is a very important system, with a
+large amount of assets stored on the blockchain. Moreover, once these transactions on the
+blockchain are executed, they cannot be revoked or
+tampered with. It is necessary to ensure the normal
+operation of functions such as transaction storage
+on the chain. Mango Move is a smart contract
+language that can be compiled and run in a
+blockchain environment that has implemented
+Move VM. Mango Move and the MoveProver tool
+have emerged as a result. IV Mango Move core design concept
+Ensuring the security of smart contracts from
+the ground up, according to SlowMist's previous
+report, blockchain security incidents in 2021
+resulted in losses exceeding 9.8 billion US dollars. As an emerging programming language, the Move
+language has also made breakthroughs and
+innovations in terms of security at different levels. Just as what First-classResources really means
+as "digital assets are first-class citizens", Move is a
+smart contract language designed for manipulating
+digital assets. Compared to other languages, Move
+has a more native and low-level handling of token
+assets.The Move language specifically defines assets
+as a type of resource, distinct from other data. In the
+context of blockchain, tokens are a type of resource, and the data of the resource must be stored under an
+account. During the transaction process, assets must
+flow to a destination, either transferred to another
+address or destroyed. Tokens cannot be duplicated
+or "double used". Solidity and most programming languages
+treat tokens as numerical variables, where assets are
+simply numbers that can be added or subtracted. When the balance of one address decreases, the
+balance of another address increases. By using code, the decrease and increase in numbers can be made
+consistent, thus ensuring the security of assets
+through logical programming. Resource
+encapsulates the concept of assets at thelanguagelevel, avoiding the arbitrary generationandaccessof assets, greatly improving security. Byte verification goes before contract
+execution. Move differs fromSolidityintermsofcompiler. As an executable bytecode language, Move has built-in security algorithms andbytecodeverifiers, which can prevent many commonerrors.The Move contract code must be verifiedbefore it can be executed, which allows thecontractto be protected from potential compiler errorsandpossible attacks. Move has been committedtoestablishing a standardized culture fromtheverybeginning, with a standard library for eachMovemodule. The Move development teamhasinitiallydeveloped a dedicated validator calledMoveProverfor contract verification.
+Based on modular composability: Themodularity of smart contracts, whichis moreefficient and flexible, is another important featurefor building a programming language ecosystem.The combination of smart contracts intheSolidityand other language ecosystems is primarilybasedon message passing between interfaces. And in Mango Move, it is basedonthecombination of modules, interactingthroughthetransfer of resources. Through the combinationofmodules, Mango Move saves block spaceoccupiedby contracts on one hand, and makes upgradeseasier on the other hand. At the same time, duetothe adoption of linear logic in the Modulesystem,itcan effectively package and encapsulatetheconceptof digital assets, clearly separating the definitionofresources from the behaviors relatedtoresources.Move Prover Overall Frame
+- 6 -
+This resource-oriented programming brings about
+expressiveness and scalability that other languages
+cannot provide.
+Mango Move Partial Program Code Display
+V Type Systemof MangoMoveDue to a large amount of assets storedontheblockchain, the programming languageof
+blockchain smart contracts must providesecurityguarantees, and Mango Move is a programminglanguage designed for the blockchainthat canprovide better security. The type system of Mango Move providesmany protections, and we emphasize threepoints:first, type safety; second, resource safety; andfinally, reference safety. The formal verificationtool Move Prover mainly provides moreadvancedand expressive methods of representation. Whereas- structinvariants is a type, a structure shouldhavesome kind of state. -unit specification(per singlefunction) Each programand each functionmustadhere to the corresponding specifications.
+5.1 Type safety
+Mango Move is a strong type systemandstrictly guarantees that no type conversioncanbedone in any situation. Types cannot be convertedbetween each other, and there is onlyonetypeforeach. This is a guarantee provided bytheMangoMove type system. 5.2 Resource safety
+One is to ensure the scarcity of resources. The
+- 7 -
+abilities of copy and drop are depended to ensure
+that a resource is not duplicated, which is
+determined by these two abilities. The other two
+abilities (key and store) determine the possible use
+cases for this resource, whether it can appear in a
+function and disappear after the smart contract ends, and whether it can be written on the blockchain. These two abilities also determine this. Mango Move also encapsulates resources, and
+all code related to resources should be encapsulated
+in one module, ensuring that developers cannot
+package it into multiple modules for resource
+handling. Therefore, Mango Move actually
+guarantees the security of resources in this aspect. 5.3 Quote safety
+In the Mango Move language, it is ensured
+through "quote safety" and follows the ownership
+rules of Rust. Any local variable in a function can
+be modified by only one process at any given time. At the same time, for a global variable, within the
+entire blockchain, there can only be one owner who
+can make changes for any given type. This is
+ensured through Mango Move's reference safety.
+VI Mango formalized verification
+system. As a new generation of smart contract
+programming language, Move has madesecurityitstop design goal in order to support Libra'svisionasa financial infrastructure and empower billionsofpeople worldwide. The security features of theMove language can be divided into threelevels:language level, virtual machine level, andtool
+level.The formalization verification tool for Moveiscalled Move Prover. The basic idea is touseanautomated theorem prover in the formal verificationdomain to verify whether a programcomplieswitha certain specification. This method requiresusersto have a detailed understanding of theprogram'soperational logic, representing the programlogicasspecifications and conveying it to the verificationsystem along with the program. "Movedefinesaspecification language called Move specificationlanguage." Translate the following text intoen-USwithout explanation: Convert Move programsandspecifications into Boogie programs usingtheMove to Boogie compiler - an intermediateverification language with formal semantics.
+6.1 Struct invariant
+The invariants of a struct allowfor acomplexstruct with multiple fields, where thereexistsarelationship between different fields withinthestruct. The invariants of the struct allowfor
+specifying the relationship between different fields,which is currently not achievable bythetypesystem.
+- 8 -
+This set of specifications for struct plus struct
+actually serves as an "enhanced type" that can
+ensure the relationships between fields within the
+struct conform to a certain relationship.
+6.2 Function specification
+One focus of Mango Move is to do the
+specification of functions, specifying how a
+function should behave in certain situations, including how it should present itself and when it
+should throw an error. Once a warning condition is
+triggered, the execution will be terminated, whichisthe goal of function specification.
+6.2.1 Abort Conditions
+Move Prover provides an opportunitytoexpress function transactions in a morespecializedmanner, allowing developers to write specificationsfor functions through the function's specification.6.2.2 Post-conditions
+Post-condition is the running stateof aprogram function.
+- 9 -
+6.2.3 Pre-conditions
+Function specification: Precondition, which
+means that in addition to being able to write
+exceptions in certain situations, there will be
+changes in the absence of exceptions. When calling
+this function, the precondition must exist. Having a
+precondition can simplify exception conditions. 6.2.4 Global Invariants
+Invariants are a type of property that always
+remains the same during program execution. Immutability is one of them: once an object of an
+immutable type is created, it represents an
+unchanging value.
+VII Mango modular blockchainThe Mango modular blockchainunderlyingcode and contract layer code are programmedusingthe Move language, decomposing blockchainfunctionality into different levels of networkarchitecture. Traditional blockchain systemstypically integrate consensus, settlement, dataavailability, and execution functionalitiesintoasingle architecture. However, with the increasingcomplexity and demands of blockchainapplications,a single architecture may not be able tomeet therequirements of different scenarios. Therefore, Mango modular blockchain separates thesecorefunctions, allowing each functional moduletooperate independently while maintainingcollaboration between them. This architecturemakes the blockchain systemmore flexibleandscalable, allowing for customizationandoptimization based on different needs. 7.1 Modular blockchainandmonolithicblockchain
+The concept of Mango modular blockchaincorresponds to a single-piece blockchain, andthetwo have significant differences in terms of
+functionality processing. First, it is necessarytoclarify the four core functions of blockchain:
+1. Execution - transaction processingandcomputation. 2. Resolve - Dispute resolutionandbridging.3. Consensus - Transaction ordering. 4. Data availability - Ensure data is available.Mango modular blockchain is anychainthatispart of the modular blockchain stack, bymodularizing the blockchain and splittingthefourfunctionalities into multiple specializedlayers. Themodular blockchain stack consists of multiplelayers of modular blockchains that dependoneachother to create a systemwith all the abovecomponents.
+- 10 -
+7.2 Advantages of Mango Modular
+Blockchain
+7.2.1 Sovereign protection
+Although other layers are used, the Mango
+modular blockchain can have sovereignty like
+Layer1. This allows the blockchain to respond to
+hacker attacks and push upgrades without any
+underlying permission. Essentially, sovereign
+blockchain retains the ability to make critical
+decisions based on social consensus, which is one
+of the most important aspects of blockchain as a
+social coordination mechanism. 7.2.2 Efficient and low-cost start-up of new
+blockchains
+Because the Mango modular blockchain does
+not need to handle all functions, new blockchains
+can simply use existing modular blockchains for
+components they wish to unload. This allows for
+the efficient bootstrapping of new blockchains, reducing deployment time and minimizing costs. 7.2.3 Scalability
+Returning to the most fundamental issue,
+solving scalability is a major reason for promotingthe modular development of blockchain, withoutsacrificing security and decentralization. Modularblockchain is not limited by the requirement tohandle all functionalities. By dividingthemintomultiple layers, scalability can be achievedwithoutsacrificing security and decentralization. Thismakes sustainable blockchain scalable andcompatible with a decentralized multi-chainenvironment. VIII Mango's newparadigmforomni-chain applications. 8.1 From single chain to multi-chain, andthen to omni-chain. As the first smart contract platform, most ofalldecentralized applications could onlybedeployedon Ether at the beginning of its birth. However, with the flourishing of public chain ecosystemsandthe development of Layer 2 solutions, applicationsnow have more choices. 8.1.1 Single chain deployment statusThe application can choose to deployonaspecific chain that suits its own business. Eachchain or L2 has its own unique mechanismdesign,with different characteristics in terms of
+decentralization, privacy, and data availability, etc.,to meet the needs of different applications. At thesame time, various one-click chain creationstacksare becoming more and more mature, andapplication developers can completelycreatetheirown chains and customize related features. Atypical example is the DYDXprotocol, whichisanearly decentralized derivatives tradingmarket
+created on Ethereum and has nowmigratedtoaseparate Cosmos Zone to better meet its throughputrequirements.
+- 11 -
+8.1.2 Multi-chain deployment status
+Applications can choose to deploy on multiple
+chains, allowing users on different chains to access
+the services provided by the application. From the
+point of view of the application itself, it is possible
+to scale up the business and increase the revenue of
+the protocol. For example, AAVE, a well-known
+lending protocol, has deployed its application on six
+chains. 8.2 Multi-chain application VS Mango
+omni-chain application
+The deployment of contracts on multiple
+chains in an application cannot share liquidity, which also leads to the fragmentation of the Web3
+ecosystem, including the fragmentation of user
+experience and liquidity. 8.2.1 Fragmented user experience in
+multi-chain cross-chain
+In order to use different on-chain services, users need to transfer assets across multiple chains, register addresses on different chains, and learn
+operations on different chains. In many cases, users
+need to take many steps and prepare many kinds of
+Gas in order to achieve the desired results. 8.2.2 Liquidity fragmentation across
+multiple chains
+In many types of DeFi protocols, liquidity
+depth is a part of their core experience. The same
+liquidity cannot exist simultaneously on multiple
+chains. Every DeFi protocol, when deployed on a
+new chain, needs to rebuild liquidity, which reduces
+the overall efficiency of liquidity. 8.2.3 Mango Omni-dApp (Mango
+omni-chain application)
+Mango's omni-chain application is based on
+the Mango Move underlying modular deploymentcontract protocol to carry the program's global state,which is a new way of building applicationswheredevelopers design the application as a whole, takingomni-chain interoperability as a prerequisite, ratherthan simply replicating a single-chainapplicationon multiple chains. The Mango omni-chainapplication consists of different modules ondifferent chains, which have interoperabilityandtogether form a complete application. Comparedtomulti-chain deployment, Mango's omni-chainapplication can extend its tentacles tomorechains,allowing users on more chains to use programservices without the problemof fragmenteduserexperience and fragmented liquidity. Features Multi-Chain Omni-ChainStatus record Distributed
+across multiple
+chains. UnifiedononechainLiquidity Distributed
+across multiple
+chains. UnifiedononechainUser
+experience
+Users need to
+be familiar with
+multi-chain
+operations, prepare
+multi-chain gas, and frequently
+transfer assets.
+Users canaccessprogramsonanychainjust likeaccessinglocalprograms.
+Integratability
+Only friendly to
+integrated
+chains, but
+more complex
+for cross-chain
+integration. Better
+cross-chaininteroperabilityIn this table, the analogy between omni-chainarchitectureand simple multi-chain deployment is shown:
+8.3 Technical architecture of MangoOmni-chain Application
+- 12 -
+The technical architecture of the omni-chain
+application consists of the Mango main chain
+contract and module contract pattern. The main
+logic of the application is placed on the Mango
+main chain, like a "master control", and then other
+chains provide a remote access module to achieve
+interaction with end users, obtain user input, and
+output the desired results for users.
+Mango Omni-chain Architecture Principle Logic Diagram
+Mango's omni-chain cross-chain bridge technology
+architecture diagram
+Mango's Omni-chain application technology architecture
+diagram
+After the new chain obtains the user's input, it
+passes that input across the chain to the Mango
+master chain for processing and outputting the
+result, which is then passed across the chaintothenew chain for outputting to the user. Insomecases,different modules of the main chain maybesplitinto different chains, which together formavirtualmain chain. 8.4 Technical architecture advantagesofMango's Omni-chain Application1. The entire chain is easy to expand. Themainlogic of the program is processed ontheMangomain chain, and the application has a unifiedstaterecord. After deploying the contract onthenewchain, users can inherit all the state recordsandliquidity from the main chain without reinventingthe wheel. 2. The overall user experience is improved, asusersdo not need to worry about which chaintheprogram is deployed on. They can access theprogram from the main chain of the entirenetwork,just like accessing a local program. Thereisnoneed to transfer assets back and forth, andthereisno need to learn operations on multipleblockchainsor prepare various types of gas. 3. The entire chain is easy to integrate acrosschains.When other applications integrate this program, they only need to connect on the mainchainoftheentire network to access all its features andliquidity,instead of having to connect separatelytoall otherchains. Mango Network's omni-chain application, asanew paradigm, has provided many newpossibilitiesfor us, supporting for arbitrary chainforging, redemption, and exchange. The applicationallowsusers to complete operations without perceivinganycross-chain processes. When the omni-chain applicationbecomesthemainstream paradigm of decentralizedapplications,
+- 13 -
+both application developers and users can
+experience unprecedented freedom in the
+blockchain world. IX Mango public chain infrastructure
+protocol
+9.1 ZK zero-knowledge proof
+The Mango public chain combines
+zero-knowledge proofs, allowing one party to
+disclose information knowledge to another party
+without revealing the information itself. Extend the
+universal blockchain. Through proof of validity, blockchain nodes can verify transactions without
+storing detailed information or replaying
+computations. This reduces confirmation time and
+improves network throughput. Due to its scalability advantages, zero-knowledge proof has become the core
+infrastructure of blockchain scaling projects, especially zero-knowledge rollups, in the Mango
+public chain. ZK-SNARKs and ZK-STARKs are
+the main types of zero-knowledge proofs.
+9.1.1 Anonymous trading
+Mango public chain uses ZK proof technology, allowing users to maintain anonymity during
+transactions. To verify the validity and legality of a
+OAtransaction without exposing any informationaboutthe transaction participants or the assets involved,generate ZK proofs. 9.1.2 Privacy protection
+OAOAMango's public chain uses ZKproof
+OAOAtechnology to perform data validationwithout
+OAOAOArevealing sensitive information. Whenverifyingthat a certain node on the chain owns specificassets,ZK proofs can be used without revealingtheidentity of the participant or any other sensitiveinformation. 9.1.3 Data integrity
+OAOAOAOAThe Mango public chain ensures that
+OAOAOAimportant data such as block data andsmart
+OAcontract states have not been tamperedwithandhave been correctly calculated throughthezk-SNARKs (Zero-Knowledge ScalableNon-Interactive Argument of Knowledge) protocol,providing highly reliable data proof for theMangopublic chain. 9.1.4 Cross-chain interactionMango public chain and ZKproof technologycan be used for secure and private cross-chaininteractions between different blockchains. Toverify the validity of specific cross-chaintransactions and protect the privacy of participants,it is done by generating ZKproofs. 9.2 Distributed Storage
+One way is to store data in a decentralizedmanner on multiple independent devices, whichoverall achieves distributed architecture. Inthefieldof blockchain applications, it represents anewgeneration of distributed storage technology
+- 14 -
+represented by IPFS. Unlike traditional storage
+technology, the new generation of distributed
+storage not only changes the way storage is done, but also changes the system architecture and
+network transmission protocol, allowing distributed
+storage to truly be stored among different parties, while also achieving privacy protection and security
+OAOAOAOAfor the data.
+OAOAOAWhen the user extracts data, the same
+OAalgorithm is used to calculate the hash of the data
+OAOAand obtain the corresponding data storage location
+OAfrom the hash table (as shown in the figure below).
+OAOAIn the Mango public chain infrastructure
+OAOAprotocol, distributed storage is a technology used
+OAOAfor storing and managing data. It disperses data
+OAOAstorage across multiple nodes in the network to
+enhance data reliability, security, and scalability. 9.2.1 Data redundancy
+OAThe Mango public chain adopts distributed
+OAstorage technology to achieve data redundancy. Each data block will be replicated on multiple
+OAOAdifferent nodes to ensure that even if some nodes
+OAfail or go offline, the complete data canstill beobtained from other nodes. 9.2.2 Data encryption
+OAIn order to protect user privacyanddatasecurity, the Mango public chain infrastructureprotocol uses encryption algorithms toencryptthedata uploaded by users to the distributedstoragenetwork, which ensures that only authorizeduserscan access and decrypt this data. 9.2.3 Data reliability
+OABy replicating data to multiple nodesandusingfault-tolerant mechanisms to detect andrepairdamaged or lost copies, Mango public chainensures that its distributed storage systemhashighreliability. Even if certain nodes fail or areattacked,it is still possible to recover lost or damagedfilesfrom other replicas. 9.2.4 Scalability
+OAThe distributed storage systemof Mangopublic chain can be horizontally scaledaccordingtodemand. When more data storage is needed, simplyadding more storage nodes can increasethestoragecapacity of the entire systemwithout compromisingperformance or reliability. 9.2.5 Data permission control
+OAThe Mango public chain infrastructureprotocol provides a powerful data permissioncontrol mechanism. Users can define thepermissions and policies for accessingtheir data,ensuring that only authorized users canaccessandmodify this data.
+OA- 15 -
+9.3 MgoDNS domain name service
+MgoDNS is a solution for distributed domain
+names based on cross-chain protocols. It provides
+OAdomain and domain data analysis services for
+non-intermediated networks. This platform can help
+businesses and individual users manage valuable
+on-chain data information, and now they can
+participate in digital asset transactions in a more
+efficient, secure, and convenient way. MgoDNS
+aims to make the internet a transparent, secure, and
+free space through its innovative decentralized
+measures. MgoDNS maximizes compatibility and
+achieves decentralization of the system. The
+underlying layer of MgoDNS is blockchain, and the
+upper layer is traditional internet. MgoDNS can
+also connect various types of public chains and
+consortium chains, collectively forming a super hub
+for connecting various blockchains. Traditional Internet has mature business
+models in project operation, but its drawbacks are
+also obvious, such as data leakage, server downtime, and other incidents. On the other hand, although
+blockchain technology fundamentally solves the
+problem of data trust, there is a lack of a certain
+foundation in terms of the scale and operation of
+applicable scenarios. So, the connection function of
+MgoDNS will enable the effective integration and
+application of both, complementing each other and
+achieving decentralization of the system. 9.3.1 MgoDNS domain name system, connecting the information internet and the
+value internet. Unlike the infrastructure of traditional domain
+name services, MgoDNS's smart contract can
+replace the roles and processes of most registration
+agencies. Any institution or individual can create
+subdomains based on the rules of the registering
+institution. The parser plays the role of a translator,
+converting names into hash addresses andsomemainstream public chain addresses. Basedoncross-chain design, MgoDNS can serveexistingpublic chain ecosystems such as Ethereum, IPFS,etc., making file access, address transfers, andsmartcontract calls more convenient and faster. 9.3.2 MgoDNS domain name parsingsystem, super hub connectingtheinformation Internet and the valueblockchain. MgoDNS domain name systemfocusesonproviding blockchain domain names anddomainname data resolution services for blockchainnetworks, helping enterprises and individual usersto participate in digital asset transactions andmanage on-chain value data informationmoreconveniently and securely. Meanwhile, basedoncross-chain design, MgoDNS can serveexistingpublic chain ecosystems such as Ethereum, IPFS,etc., making file access, address transfers, andsmartcontract calls more convenient and faster.
+MgoDNS domain name resolutiontechnology:· MgoDNS achieves distributeddomainnameresolution by using domain name resolutionsmartcontracts and cross-chain data exchangeonmultiple
+- 16 -
+mainstream chains. · Domain name registration, resolution, and
+trading are not affected by any centralized factors, achieving complete decentralization. The security
+of domain names is guaranteed by blockchain
+technology, and the resolution of domain names is
+supported by a high-speed blockchain network. ·MgoDNS is fully compatible with the
+management and resolution of existing domain
+names. ·Support dynamic domain name resolution. MgoDNS automatically updates IP mapping and
+achieves blockchain confirmation in seconds
+through the wallet, enabling dynamic domain name
+services like traditional Peanut Shell and Dandelion
+without additional costs. ·Support for user-defined domain names. From
+the perspective of the domain name product, there
+are currently Ethereum Name Service (ENS) and
+Unstoppable Domains. However, ENS only
+supports the resolution of cryptocurrency addresses, making it difficult to connect to the traditional
+information internet and the underlying blockchain. On the other hand, the application scenarios of
+Unstoppable Domains are also relatively limited. In addition to fulfilling the functions of
+traditional DNS domains, MgoDNS also combines
+the functions of information networks and value
+networks, supporting traditional domain name
+resolution, user identity authentication, DApp, social relationship networks, video conferences, and
+distributed information flow and other
+scenario-based applications.
+ENS
+Unstoppable
+Domains
+MgoDNSDigital
+currency
+address
+resolution
+Support Support SupportIP address
+parsing
+Nonsupport Support SupportTraditional
+domain name
+analysis
+Nonsupport Nonsupport SupportUnderlying
+blockchain
+Ethereum
+(ETH)
+Ethereum(ETH)
+ManGOUser identity
+authentication
+Nonsupport Nonsupport SupportDomain name
+resolution
+client
+Nonsupport Nonsupport SupportDecentralized
+network
+Nonsupport Support SupportDecentralized
+encrypted
+mailbox
+Nonsupport Nonsupport SupportDecentralized
+edge-cloud
+computing
+Nonsupport Nonsupport SupportDecentralized
+edge
+DAppstore
+Nonsupport Nonsupport Support9.4 Mango client end
+A copy (also known as: full client) isaconsistent copy that maintains the effectivestateofthe system, used for auditing and buildingtransactions or operational services. Lightweightclients are based on object references andtransactional authentication information, whichcanauthenticate transactions that cause their creationorexecution. Copies performhigh-integrityreadsofthe system state without the need to maintaincomplete replica nodes. By providingconcise
+- 17 -
+evidence packages and effect certificates, the
+lightweight client can undergo transformation
+within Mango and perform transaction operations
+or observe results. Regular checkpoint mechanism
+can be used to create collective checkpoints for
+final transactions, effectively verifying the recent
+state of objects and the events issued. Customer-driven is a mechanism for handling
+authorization failures or client malfunctions. The
+client can solve these problems by updating to a
+level of honest authority that can handle correct
+transactions. Once there are no more certificates to
+synchronize, the list will be submitted to the new
+authority for execution. The relay is the client that
+performs this operation, and multiple relays can run
+simultaneously to update and coordinate the replica
+operation service with each other. Blocks are tools
+used by followers to receive updates and maintain
+the latest view state when processing authorizations. In addition, the authorities can use a push-pull
+gossip network to update transactions with each
+other and reduce the number of times the relay
+needs to perform this function. The authorities may
+use periodic status commitments to ensure that they
+have dealt with the complete set of certificates until
+a certain checkpoint. The Mango system expands its capabilities by
+allocating more resources to handle transaction
+permissions. These resources include CPU, memory, network, and storage within or across multiple
+machines. Increasing resources can improve the
+ability to process transactions, thereby increasing
+revenue. At the same time, more resources will also
+reduce latency because operations can be executed
+without waiting for necessary resources to become
+available. In order to ensure that more resources can
+increase capacity in a quasi-linear manner, the
+Mango system actively reduces bottlenecks and
+synchronizes points that require global locking
+within permissions. Transaction processing is
+explicitly divided into two phases: the first phase is
+to ensure exclusive access to a specific version of
+an object or shared access to an object; the second
+phase is to execute the transaction andcommititseffects. For transactions involving sharedobjects, itisnecessary to use consensus protocols for ordering,which may become a bottleneck. "But thelatesthigh-throughput consensus protocol for engineeringindicates that sorting is only the bottleneckinstatemachine replication, not the executionorder."IntheMango system, sorting is only used todeterminetheversion of the input shared object, that is, incrementing the object version number andassociating it with the transaction summary, withoutinvolving sequential execution. The second phase occurs when theversionsofall input objects are known to the permissionsandinvolves executing a move transactionandcommitting its effects. Once the versionof theinputobject is known, it can be executed inafullyparallel manner. On multi-core or multi-physicalmachines, virtual machines read versionedinputobjects and write the generated objects tostorage.For object and transaction storage, the consistencyrequirements are very loose (except for sequentiallock mapping), allowing each authoritytousescalable distributed key-value storage. Inaddition,due to the idempotent nature of the execution, itiseasy to recover even in the event of componentcrashes or hardware failures. X References
+1. https://github.com/MangoNet-Labs/mango2. D. Matsuoka, C. Dixon, E. Lazzarin, andR. Hackett.(2022) Introducing the 2022stateofcryptoreport. https://a16z.com/tag/state-of-crypto-2022/3. S. Blackshear, E. Cheng, D. L. Dill, V. Gao, B.Maurer, T. Nowacki, A. Pott, S. Qadeer, D. R. Rain, S. Sezer, T. Zakian, and R. Zhou, "Move:Alanguage with programmable resources,"2019. https://developers.diem.com/papers/diem-move-a-language-with-programmableresources/2019-06-18.pdf
+4. Sam Blackshear, David L. Dill, ShazQadeer,
+- 18 -
+Clark W. Barrett, John C. Mitchell, Oded Padon, and Yoni Zohar. Submitted on July 23, 2020; v1
+submitted on April 10, 2020; originally announced
+in April 2020. Resources: A Safe Language
+Abstraction for Money. CoRR abs/2004.05106
+(2020). arXiv:2004.05106
+https://arxiv.org/abs/2004.05106
+5. Marco Patrignani and Sam Blackshear. 2021. Robust Safety for Move. CoRR
+abs/218.05043(2021).arXiv:218.05043
+https://arxiv.org/abs/218.05043
+6. Daniel Collins, Rachid Guerraoui, Jovan
+Komatovic, Petr Kuznetsov, Matteo Monti, Matej
+Pavlovic, Yvonne-Anne Pignolet, Dragos-Adrian
+Seredinschi, Andrei Tonkikh, and Athanasios
+Xygkis. 2020. Online Payments by Merely
+Broadcasting Messages. In the 50th Annual
+IEEE/IFIP International Conference on Dependable
+Systems and Networks, DSN 2020, Valencia, Spain, June 29 - July 2, 2020. IEEE
+7. David Dill, Wolfgang Grieskamp, Junkil Park, Shaz Qadeer, Meng Xu, Emma Zhong. Fast and
+Reliable Formal Verification of Smart Contracts
+with the Move Prover. Submitted 12 February, 2022; v1 submitted 15 October, 2021; originally
+announced October.2021. arXiv:218.08362
+https://arxiv.org/abs/218.08362

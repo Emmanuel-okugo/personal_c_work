@@ -8,13 +8,14 @@
  * Return: a pointer to int
  */
 
-int occurence(char *string, int letters[])
+void occurence(char *string, int letters[])
 {
 	int i, j, k, l = 0;
 	int strlength = 0;
 
 	/* getting stringlength */
 	strlength = strlen(string);
+
 
 	/* checking for occurences */
 	for (i = 'A', j = 'a'; i <= 'Z'; i++, j++)
@@ -33,7 +34,5 @@ int occurence(char *string, int letters[])
 
 		l++;
 	}
-
-	return (0);
 
 }
