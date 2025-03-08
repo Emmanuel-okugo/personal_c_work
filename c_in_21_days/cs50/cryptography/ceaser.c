@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	if (check_num == 0)
+	if (check_num != str_len)
 	{
 		fprintf(stderr, "usage: ./ceaser key\n");
 		return (1);
