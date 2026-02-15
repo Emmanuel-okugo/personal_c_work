@@ -1,0 +1,21 @@
+1. float (*p)(int R);
+p = average;
+
+
+2. int (*p[10])(char *);
+
+3. char *p[10];
+
+4. in my own understanding that is an error due to type incompatibility
+	x is of (x *[12])
+	ptr is of (ptr *)
+
+5. 	struct record
+	{
+		char *name;
+		int Age;
+		int phone number[11];
+		char *state;
+		struct record *next = NULL;
+	}credentials;
+

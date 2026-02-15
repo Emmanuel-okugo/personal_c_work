@@ -1,0 +1,20 @@
+ uint16_t samples;
+ float factor = atof(argv[3]);
+
+	/* Read samples from input file and write updated data to output file */
+        while(!(feof(input)))
+        {
+                /* reading samples */
+                fread(&samples, sizeof(uint16_t), 1, input);
+
+                /* update the sample by factor */
+                samples = samples * factor;
+
+                /* write the updated sample to the output file */
+                fwrite(&samples, sizeof(uint16_t), 1, output);
+        }
+
+    /* Copy header from input file to output file */
+        fread(header, HEADER_SIZE, 1, input);
+        fwrite(header, HEADER_SIZE, 1, output);
+

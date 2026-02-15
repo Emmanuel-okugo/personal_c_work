@@ -8,7 +8,7 @@ int main(void)
 
 	for (ch = 0, i = 0; ch < 255; ch++, i++)
 	{
-		printf("ASII for %d =%c\n", i, ch);
+		printf("ASCII for %d = %c\n", i, ch);
 	}
 
 	return(0);

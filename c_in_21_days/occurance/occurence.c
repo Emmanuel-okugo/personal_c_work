@@ -20,7 +20,7 @@ void occurence(char *string, int letters[])
 	/* checking for occurences */
 	for (i = 'A', j = 'a'; i <= 'Z'; i++, j++)
 	{
-		letters[l] = 0;
+`		letters[l] = 0;
 
 		for (k = 0; k < strlength; k++)
 		{

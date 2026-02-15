@@ -3,10 +3,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 char *string;
 
 int main(void)
 {
+
 	/* aloocating space */
 	string = malloc(80 * sizeof(char));
 

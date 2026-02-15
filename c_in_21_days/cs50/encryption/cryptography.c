@@ -34,6 +34,7 @@ int main(int argc, char *argv[])
 		if (isalpha(argv[1][i]) == 0)
 		{
 			fprintf(stderr, "\b1 - unexpected token found!\n");
+			printf("\b");
 			return (1);
 		}
 	}

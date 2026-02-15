@@ -27,7 +27,7 @@ int main(void)
 	{
 		printf("Empty text\n");
 		free(sentence);
-		return (0);
+		return (1);
 	}
 
 	result = index_calc(sentence);

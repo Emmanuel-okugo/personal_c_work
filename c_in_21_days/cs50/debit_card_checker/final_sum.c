@@ -20,14 +20,14 @@ int final_Sum(int max_num_of_digits, long card_number, long *extract)
 		/* extracting the individual numbers in the card number */
 		first_mod = card_number % incr_by_10;
 
-                if((incr_by_10 > 10) && (first_mod < (incr_by_10/10)))
+                if((incr_by_10 > 10) && (first_mod < (incr_by_10/10))) /* checking for zeros */
                 {
                         *extract = 0;
                 }
                 else
                 {
                         *extract = first_mod / (incr_by_10/10);
-			if(first_mod >= 100)
+			if(first_mod >= 100) /* getting the last two digits of the card number */
 			{
 				fake_extract = first_mod / (incr_by_10/100);
 			}

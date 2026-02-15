@@ -12,7 +12,7 @@
 
 int main(void)
 {
-	int letters[26];
+	int letters[26] = {0};
 	char *file;
 	int ch, j;
 	int i = 0;
